@@ -10,13 +10,14 @@
 
 <body>
     <header>
+        
         <div class="navbar">
             <div>
                 <button class="hamburger"  onClick="toggleMenu()">☰</button>
                 <img src="https://vacation.epam.com/epm-vts-web/static/media/vacation.9e7495fc82c3decbfe5fa4f9976c82ea.svg" alt="vacation">
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#dashboard"><span class="dash">Dashboard</span></a></li>
                         <li><a href="#requests">Requests</a></li>
                         <li><a href="#balances">Balances</a></li>
                         <li><a href="#notifications">Notifications</a></li>
@@ -34,14 +35,15 @@
                 </svg>
 
             </div>
-
         </div>
+    
+
         <div class="user-info">
-            <p>Personal</p>
+            <p><span class="personal">Personal</span></p>
             <p>Action required <span class="action-required">0</span></p>
         </div>
+        
     </header>
-
     <main>
         <section class="overview">
             <div class="overview-header">
