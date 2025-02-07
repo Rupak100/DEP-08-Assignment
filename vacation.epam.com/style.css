@@ -1,8 +1,15 @@
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    scrollbar-color: #888 #f1f1f1;
 }
 
 header {
@@ -256,6 +263,117 @@ main {
     
 }
 
+.requests-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .tabs {
+    display: flex;
+    /* border-bottom: 1px solid #e0e0e0; */
+  
+    font-weight: bold;
+  }
+  
+  .tab {
+    padding: 15px 15px;
+    text-decoration: none;
+    color: #474A59;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid #30B6DD;
+  }
+  
+  .count {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  .count.fill{
+    background-color: #30B6DD;
+    color: white;
+  }
+
+  
+  .requests-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .requests-table th{
+    background-color: #f4f4f4;
+    color: #474A59;
+    font-size: 12px;
+    
+  }
+  
+  .requests-table th, .requests-table td {
+    text-align: left;
+    padding: 15px;
+    padding-right: 40px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .requests-table td{
+    color: #858589;
+    padding: 15px;
+    padding-right: 40px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .sick-leave {
+    background-color: #ff9999;
+    border-radius: 50%;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+  }
+  
+  .closed {
+    background-color: #e0e0e0;
+    color: #666;
+  }
+  .fa-solid{
+    color: #858589;
+  }
+  .approver-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .approver-name {
+    color: #0099ff;
+  }
+  .requests-container{
+    width: 100%;
+   overflow-x: auto;
+  }
+
+  .requests-table {
+    min-width: 800px; /* Adjust this value based on your table's minimum comfortable width */
+  }
+
 @media (max-width: 768px) {
     .navbar nav {
         display: none;
@@ -312,7 +430,29 @@ main {
         margin: 10px;
     }
 
-  
+    .requests-container {
+        margin: 0 -15px;
+        padding: 0 10px;
+      }
+
+      .requests-table th, .requests-table td {
+        font-size: 12px;
+        text-align: left;
+        padding: 10px;
+        padding-right: 20px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .tabs {
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+        gap: 4;
+      }
+      .tab {
+        padding: 10px;
+        text-decoration: none;
+        color: #474A59;
+      }
 
   
    
