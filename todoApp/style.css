@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap');
+
+body {
+    background: #232E58;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style for the input wrapper */
+.input {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top:40px;
+    gap: 10px; 
+}
+
+/* Style for the input field */
+#task-input {
+    width: 250px;  
+    padding: 10px; 
+    border: 2px solid #F4C300;  
+    border-radius: 5px;  
+    font-size: 16px; 
+    color: #232E58; 
+    outline: none; 
+    transition: border 0.3s; 
+}
+
+/* Change border color on focus */
+#task-input:focus {
+    border-color: #FF8C00; 
+}
+
+#add-task-button {
+    padding: 10px 15px; 
+    background-color: #F4C300; 
+    color: #232E58; 
+    border: none; 
+    border-radius: 5px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+#add-task-button:hover {
+    background-color: #FF8C00; 
+    transform: scale(1.05); 
+}
+
+#add-task-button:active {
+    background-color: #CC9D00;
+}
+
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 10px;
+    background: #3A4A8A;
+    border-radius: 8px;
+}
+
+.delete-button {
+    background: #e74c3c; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #c0392b; /* Darker red */
+}

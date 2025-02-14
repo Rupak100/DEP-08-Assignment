@@ -369,9 +369,8 @@ main {
     width: 100%;
    overflow-x: auto;
   }
-
   .requests-table {
-    min-width: 800px; /* Adjust this value based on your table's minimum comfortable width */
+    min-width: 800px;
   }
 
 @media (max-width: 768px) {
